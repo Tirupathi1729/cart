@@ -6,6 +6,10 @@ pipeline {
     stage('Compile') {
       steps {
         echo 'Hello World'
+        script {
+            cipipeline.info 'Starting'
+            cipipeline.warning 'Nothing to do!'
+        }
       }
     }
 
